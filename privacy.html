@@ -1,47 +1,182 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Politique de confidentialité — Promi</title>
 <style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-    max-width: 720px;
-    margin: 40px auto;
-    padding: 0 24px;
-    line-height: 1.6;
-    color: #222;
-    background: #fafafa;
-  }
-  h1 { font-weight: 300; font-size: 28px; color: #e85d04; }
-  h2 { font-weight: 600; font-size: 16px; margin-top: 32px; }
-  p { margin: 12px 0; }
-  .meta { color: #888; font-size: 13px; margin-bottom: 32px; }
-  .highlight { background: #fff8e1; padding: 16px; border-left: 3px solid #e85d04; margin: 16px 0; }
+  :root { --bg: #0a0a0c; --text: #d4d4d8; --heading: #fafafa; --accent: #FA8E32; --card: #16161a; --border: #27272a; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Helvetica Neue', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; padding: 0 20px 80px; max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 28px; font-weight: 300; color: var(--accent); margin: 48px 0 8px; letter-spacing: 0.3px; }
+  h2 { font-size: 17px; font-weight: 600; color: var(--heading); margin: 36px 0 12px; }
+  h3 { font-size: 14px; font-weight: 600; color: var(--heading); margin: 24px 0 8px; }
+  p, li { font-size: 14px; margin-bottom: 10px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .meta { font-size: 12px; color: #71717a; margin-bottom: 32px; }
+  .lang-toggle { position: fixed; top: 16px; right: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; color: var(--accent); font-size: 12px; font-weight: 600; cursor: pointer; z-index: 10; }
+  .section { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px 22px; margin: 16px 0; }
+  strong { color: var(--heading); font-weight: 600; }
+  a { color: var(--accent); text-decoration: none; }
+  .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 12px; color: #52525b; }
+  [lang="en"] { display: none; }
+  body.en [lang="en"] { display: block; }
+  body.en [lang="fr"] { display: none; }
 </style>
 </head>
 <body>
+<button class="lang-toggle" onclick="document.body.classList.toggle('en'); this.textContent = document.body.classList.contains('en') ? 'FR' : 'EN'">EN</button>
 
-<h1>Politique de confidentialité de l'application Promi</h1>
-<p class="meta">Version 1 — En vigueur au 15 avril 2026</p>
+<!-- ═══════════════ FRANÇAIS ═══════════════ -->
 
-<div class="highlight">
-<p><strong>Promi est conçue selon le principe de protection des données dès la conception (« privacy by design »).</strong> L'Éditeur n'exploite aucun serveur central de stockage des données ou des contenus utilisateurs. Aucun analytics, aucun tracking, aucun cookie, aucun pixel publicitaire, aucun service tiers de profilage. Les données restent sur votre appareil et, le cas échéant, dans votre iCloud personnel.</p>
+<div lang="fr">
+<h1>Politique de confidentialité</h1>
+<p class="meta">Version 2 — En vigueur au 21 avril 2026 — Dernière mise à jour : 21 avril 2026</p>
+
+<div class="section">
+<p><strong>Promi est conçue selon le principe de protection des données dès la conception (« privacy by design »).</strong> L'Éditeur n'exploite aucun serveur central. Aucune donnée utilisateur ne transite par les systèmes de l'Éditeur. Aucun analytics, aucun tracking, aucun cookie, aucun pixel publicitaire, aucun SDK tiers de profilage, aucune télémétrie.</p>
 </div>
 
-<h2>Responsable de traitement</h2>
-<p>Tom Autier, micro-entrepreneur — 23 rue Breteuil, 13006 Marseille, France — Courriel : promiapp@gmail.com</p>
+<h2>1. Responsable de traitement</h2>
+<p>Tom Autier, micro-entrepreneur — 23 rue Breteuil, 13006 Marseille, France.<br>
+Courriel : <a href="mailto:promiapp@gmail.com">promiapp@gmail.com</a></p>
 
-<h2>Données traitées</h2>
-<p>L'Éditeur reçoit uniquement les données techniques fournies par Sign in with Apple (identifiant pseudonyme stable, nom et email facultatifs, anonymisables via la fonction Apple « Masquer mon e-mail »). Tous les contenus créés dans l'application (Promi, Nuées, contacts) sont stockés exclusivement sur l'appareil de l'utilisateur ou dans son iCloud personnel.</p>
+<h2>2. Données collectées</h2>
+<h3>2.1 Données que l'Éditeur ne collecte PAS</h3>
+<ul>
+<li>Aucune donnée de localisation (GPS, Wi-Fi, Bluetooth).</li>
+<li>Aucun identifiant publicitaire (IDFA).</li>
+<li>Aucune donnée de navigation, d'historique, de recherche.</li>
+<li>Aucun cookie, pixel, balise, fingerprint.</li>
+<li>Aucune donnée biométrique.</li>
+<li>Aucune donnée de santé, financière, politique, religieuse, syndicale, d'orientation sexuelle.</li>
+<li>Aucun contenu des Promi, Nuées, commentaires, contacts.</li>
+<li>Aucune métadonnée d'usage (fréquence, durée, écrans visités).</li>
+</ul>
 
-<h2>Vos droits</h2>
-<p>Conformément au RGPD, vous disposez des droits d'accès, de rectification, d'effacement, de portabilité, de limitation, d'opposition et de retrait du consentement. La majorité de ces droits s'exerce directement via la suppression de l'application et des données iCloud associées. Pour toute demande complémentaire : promiapp@gmail.com.</p>
+<h3>2.2 Données traitées par Apple (hors contrôle de l'Éditeur)</h3>
+<p>Si l'Utilisateur active « Sign in with Apple » (fonctionnalité future, non encore active), Apple transmet à l'Application un identifiant pseudonyme stable. Le nom et l'email sont facultatifs et anonymisables via la fonction Apple « Masquer mon e-mail ». L'Éditeur ne reçoit, ne stocke et ne traite ces données sur aucun serveur — elles restent exclusivement sur l'appareil de l'Utilisateur.</p>
 
-<p><em>Pour le texte intégral et complet de la Politique de confidentialité, consulter l'application Promi (Réglages → Légal → Confidentialité). Le texte affiché dans l'application fait foi.</em></p>
+<h3>2.3 Données stockées localement</h3>
+<p>Tous les contenus créés dans l'Application (Promi, Nuées, contacts, brouillons, paramètres, score Karma, streak) sont stockés <strong>exclusivement sur l'appareil de l'Utilisateur</strong> via les mécanismes de stockage local du système d'exploitation (UserDefaults, fichiers JSON locaux). En cas de suppression de l'Application, ces données sont définitivement effacées.</p>
 
-<p style="margin-top: 48px; color: #888; font-size: 13px;">Contact RGPD : promiapp@gmail.com — Réclamation possible auprès de la CNIL (www.cnil.fr).</p>
+<h3>2.4 iCloud (si activé par l'Utilisateur)</h3>
+<p>Si l'Utilisateur active la synchronisation iCloud sur son appareil, certaines données peuvent être sauvegardées dans son espace iCloud personnel, géré exclusivement par Apple selon ses propres conditions et politique de confidentialité. L'Éditeur n'a aucun accès à cet espace.</p>
+
+<h2>3. Finalités du traitement</h2>
+<p>Les données locales sont utilisées uniquement pour le fonctionnement de l'Application sur l'appareil de l'Utilisateur : afficher les Promi, calculer le Karma, programmer les notifications locales, afficher le widget. Aucune donnée n'est transmise à l'Éditeur ou à un tiers.</p>
+
+<h2>4. Partage avec des tiers</h2>
+<p><strong>Aucun partage.</strong> L'Éditeur ne vend, ne loue, ne prête, ne transmet, ne partage aucune donnée à aucun tiers, y compris à des fins publicitaires, statistiques, commerciales, de recherche ou toute autre finalité. Il n'existe aucun serveur, aucune base de données, aucune API côté Éditeur.</p>
+
+<h2>5. Sécurité</h2>
+<p>La sécurité des données repose sur les mécanismes de protection du système d'exploitation iOS (chiffrement du stockage, sandboxing, Secure Enclave). L'Éditeur ne peut garantir la sécurité absolue des données stockées localement et décline toute responsabilité en cas de perte, vol, altération ou accès non autorisé à l'appareil de l'Utilisateur.</p>
+
+<h2>6. Durée de conservation</h2>
+<p>Les données sont conservées tant que l'Application est installée sur l'appareil. La suppression de l'Application entraîne la suppression définitive et irréversible de toutes les données. L'Éditeur ne dispose d'aucune copie et ne peut procéder à aucune restauration.</p>
+
+<h2>7. Droits de l'Utilisateur (RGPD)</h2>
+<p>Conformément au Règlement Général sur la Protection des Données (UE) 2016/679, l'Utilisateur dispose des droits suivants : accès, rectification, effacement, portabilité, limitation, opposition, retrait du consentement.</p>
+<p>L'ensemble de ces droits s'exerce directement par l'Utilisateur sur son appareil (modification ou suppression des contenus dans l'Application, suppression de l'Application). L'Éditeur ne détenant aucune donnée, il ne peut techniquement répondre à une demande d'accès ou d'effacement portant sur des données qu'il ne possède pas.</p>
+<p>Pour toute question : <a href="mailto:promiapp@gmail.com">promiapp@gmail.com</a></p>
+
+<h2>8. Mineurs</h2>
+<p>L'Application est classée 4+ sur l'App Store. L'Éditeur ne collecte sciemment aucune donnée de mineurs. Si un parent ou tuteur légal estime que des données d'un mineur sont en cause, il peut contacter l'Éditeur à l'adresse ci-dessus.</p>
+
+<h2>9. Transferts internationaux</h2>
+<p>Aucun transfert international de données n'est effectué par l'Éditeur. Les données restent sur l'appareil de l'Utilisateur. En cas d'utilisation d'iCloud par l'Utilisateur, les conditions de transfert relèvent exclusivement de la politique d'Apple.</p>
+
+<h2>10. Modifications</h2>
+<p>L'Éditeur se réserve le droit de modifier la présente politique à tout moment. Toute modification sera communiquée via une mise à jour de l'Application. L'utilisation continue de l'Application après notification vaut acceptation des modifications.</p>
+
+<h2>11. Limitation de responsabilité</h2>
+<p>L'Éditeur décline toute responsabilité quant à la perte, l'altération, la destruction ou l'accès non autorisé aux données stockées localement sur l'appareil de l'Utilisateur, quelle qu'en soit la cause (vol, panne, mise à jour système, suppression accidentelle, acte malveillant de tiers).</p>
+
+<h2>12. Contact et réclamation</h2>
+<p>Contact : <a href="mailto:promiapp@gmail.com">promiapp@gmail.com</a><br>
+Réclamation auprès de la CNIL : <a href="https://www.cnil.fr">www.cnil.fr</a></p>
+
+<div class="footer">
+© 2026 Tom Autier — Promi. Tous droits réservés.<br>
+23 rue Breteuil, 13006 Marseille, France.
+</div>
+</div>
+
+<!-- ═══════════════ ENGLISH ═══════════════ -->
+
+<div lang="en">
+<h1>Privacy Policy</h1>
+<p class="meta">Version 2 — Effective April 21, 2026 — Last updated: April 21, 2026</p>
+
+<div class="section">
+<p><strong>Promi is designed with privacy by design at its core.</strong> The Publisher does not operate any central server. No user data passes through the Publisher's systems. No analytics, no tracking, no cookies, no ad pixels, no third-party profiling SDKs, no telemetry.</p>
+</div>
+
+<h2>1. Data Controller</h2>
+<p>Tom Autier, sole proprietor — 23 rue Breteuil, 13006 Marseille, France.<br>
+Email: <a href="mailto:promiapp@gmail.com">promiapp@gmail.com</a></p>
+
+<h2>2. Data Collected</h2>
+<h3>2.1 Data the Publisher does NOT collect</h3>
+<ul>
+<li>No location data (GPS, Wi-Fi, Bluetooth).</li>
+<li>No advertising identifiers (IDFA).</li>
+<li>No browsing, history, or search data.</li>
+<li>No cookies, pixels, beacons, fingerprints.</li>
+<li>No biometric data.</li>
+<li>No health, financial, political, religious, union, or sexual orientation data.</li>
+<li>No content of Promis, Nuées, comments, or contacts.</li>
+<li>No usage metadata (frequency, duration, screens visited).</li>
+</ul>
+
+<h3>2.2 Data processed by Apple (outside Publisher's control)</h3>
+<p>If the User activates "Sign in with Apple" (future feature, not yet active), Apple transmits a stable pseudonymous identifier to the Application. Name and email are optional and can be anonymized via Apple's "Hide My Email" feature. The Publisher does not receive, store, or process this data on any server — it remains exclusively on the User's device.</p>
+
+<h3>2.3 Data stored locally</h3>
+<p>All content created in the Application (Promis, Nuées, contacts, drafts, settings, Karma score, streak) is stored <strong>exclusively on the User's device</strong> using the operating system's local storage mechanisms (UserDefaults, local JSON files). Deleting the Application permanently erases all data.</p>
+
+<h3>2.4 iCloud (if enabled by the User)</h3>
+<p>If the User enables iCloud sync on their device, some data may be backed up in their personal iCloud space, managed exclusively by Apple under its own terms and privacy policy. The Publisher has no access to this space.</p>
+
+<h2>3. Purpose of Processing</h2>
+<p>Local data is used solely for the Application's operation on the User's device: displaying Promis, calculating Karma, scheduling local notifications, displaying the widget. No data is transmitted to the Publisher or any third party.</p>
+
+<h2>4. Sharing with Third Parties</h2>
+<p><strong>No sharing whatsoever.</strong> The Publisher does not sell, rent, lend, transmit, or share any data with any third party, including for advertising, statistical, commercial, research, or any other purpose. There is no server, no database, no API on the Publisher's side.</p>
+
+<h2>5. Security</h2>
+<p>Data security relies on iOS operating system protection mechanisms (storage encryption, sandboxing, Secure Enclave). The Publisher cannot guarantee absolute security of locally stored data and disclaims all liability in case of loss, theft, alteration, or unauthorized access to the User's device.</p>
+
+<h2>6. Retention Period</h2>
+<p>Data is retained as long as the Application is installed on the device. Deleting the Application results in the permanent and irreversible deletion of all data. The Publisher holds no copy and cannot perform any restoration.</p>
+
+<h2>7. User Rights (GDPR)</h2>
+<p>Under the General Data Protection Regulation (EU) 2016/679, the User has the following rights: access, rectification, erasure, portability, restriction, objection, withdrawal of consent.</p>
+<p>All these rights are exercised directly by the User on their device (editing or deleting content in the Application, deleting the Application). Since the Publisher holds no data, it cannot technically respond to access or erasure requests concerning data it does not possess.</p>
+<p>For any questions: <a href="mailto:promiapp@gmail.com">promiapp@gmail.com</a></p>
+
+<h2>8. Children</h2>
+<p>The Application is rated 4+ on the App Store. The Publisher does not knowingly collect any data from minors. If a parent or legal guardian believes a minor's data is involved, they may contact the Publisher at the address above.</p>
+
+<h2>9. International Transfers</h2>
+<p>No international data transfer is performed by the Publisher. Data remains on the User's device. If the User uses iCloud, transfer conditions fall exclusively under Apple's policy.</p>
+
+<h2>10. Changes</h2>
+<p>The Publisher reserves the right to modify this policy at any time. Any changes will be communicated via an Application update. Continued use of the Application after notification constitutes acceptance of the changes.</p>
+
+<h2>11. Limitation of Liability</h2>
+<p>The Publisher disclaims all liability for the loss, alteration, destruction, or unauthorized access to data stored locally on the User's device, regardless of cause (theft, malfunction, system update, accidental deletion, malicious act by third parties).</p>
+
+<h2>12. Contact and Complaints</h2>
+<p>Contact: <a href="mailto:promiapp@gmail.com">promiapp@gmail.com</a><br>
+Complaints to the CNIL: <a href="https://www.cnil.fr">www.cnil.fr</a></p>
+
+<div class="footer">
+© 2026 Tom Autier — Promi. All rights reserved.<br>
+23 rue Breteuil, 13006 Marseille, France.
+</div>
+</div>
 
 </body>
 </html>
