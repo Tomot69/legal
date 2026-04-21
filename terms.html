@@ -1,39 +1,240 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Conditions d'utilisation — Promi</title>
 <style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-    max-width: 720px;
-    margin: 40px auto;
-    padding: 0 24px;
-    line-height: 1.6;
-    color: #222;
-    background: #fafafa;
-  }
-  h1 { font-weight: 300; font-size: 28px; color: #e85d04; }
-  h2 { font-weight: 600; font-size: 16px; margin-top: 32px; }
-  p { margin: 12px 0; }
-  .meta { color: #888; font-size: 13px; margin-bottom: 32px; }
+  :root { --bg: #0a0a0c; --text: #d4d4d8; --heading: #fafafa; --accent: #FA8E32; --card: #16161a; --border: #27272a; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Helvetica Neue', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; padding: 0 20px 80px; max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 28px; font-weight: 300; color: var(--accent); margin: 48px 0 8px; letter-spacing: 0.3px; }
+  h2 { font-size: 17px; font-weight: 600; color: var(--heading); margin: 36px 0 12px; }
+  h3 { font-size: 14px; font-weight: 600; color: var(--heading); margin: 24px 0 8px; }
+  p, li { font-size: 14px; margin-bottom: 10px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .meta { font-size: 12px; color: #71717a; margin-bottom: 32px; }
+  .lang-toggle { position: fixed; top: 16px; right: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; color: var(--accent); font-size: 12px; font-weight: 600; cursor: pointer; z-index: 10; }
+  .section { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px 22px; margin: 16px 0; }
+  strong { color: var(--heading); font-weight: 600; }
+  a { color: var(--accent); text-decoration: none; }
+  .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 12px; color: #52525b; }
+  [lang="en"] { display: none; }
+  body.en [lang="en"] { display: block; }
+  body.en [lang="fr"] { display: none; }
 </style>
 </head>
 <body>
+<button class="lang-toggle" onclick="document.body.classList.toggle('en'); this.textContent = document.body.classList.contains('en') ? 'FR' : 'EN'">EN</button>
 
-<h1>Conditions d'utilisation de l'application Promi</h1>
-<p class="meta">Version 1 — En vigueur au 15 avril 2026</p>
+<!-- ═══════════════ FRANÇAIS ═══════════════ -->
 
-<p><strong>Les présentes Conditions Générales d'Utilisation</strong> (ci-après « CGU ») régissent l'utilisation de l'application mobile Promi (ci-après « l'Application »), éditée par Tom Autier, micro-entrepreneur, dont le siège est situé au 23 rue Breteuil, 13006 Marseille, France (ci-après « l'Éditeur »). Toute utilisation de l'Application implique l'acceptation pleine et entière, sans réserve, des présentes CGU par l'utilisateur (ci-après « l'Utilisateur »).</p>
+<div lang="fr">
+<h1>Conditions d'utilisation</h1>
+<p class="meta">Version 2 — En vigueur au 21 avril 2026 — Dernière mise à jour : 21 avril 2026</p>
 
-<h2>Article 1 — Objet</h2>
-<p>L'Application Promi est un service permettant à l'Utilisateur de formuler, partager, suivre et gérer des engagements personnels (ci-après « Promi »), seul ou au sein de groupes (ci-après « Nuées »). L'Application est exclusivement un outil de mise en relation et de suivi déclaratif. L'Éditeur n'est en aucun cas partie prenante aux engagements pris entre Utilisateurs ou par un Utilisateur envers lui-même.</p>
-<p>L'Éditeur n'a pas vocation à se substituer à un quelconque tiers, professionnel, institution ou autorité. L'Application ne fournit aucun conseil juridique, médical, psychologique, financier, sentimental, ni aucun autre conseil professionnel.</p>
+<div class="section">
+<p><strong>Toute utilisation de l'Application implique l'acceptation pleine et entière, sans réserve, des présentes Conditions Générales d'Utilisation.</strong> Si vous n'acceptez pas ces conditions, vous ne devez pas utiliser l'Application.</p>
+</div>
 
-<p><em>Pour le texte intégral et complet des CGU, consulter l'application Promi (Réglages → Légal → Conditions d'utilisation). Le texte affiché dans l'application fait foi.</em></p>
+<h2>Article 1 — Éditeur</h2>
+<p>L'application mobile Promi (ci-après « l'Application ») est éditée par Tom Autier, micro-entrepreneur — 23 rue Breteuil, 13006 Marseille, France (ci-après « l'Éditeur »).<br>
+Courriel : <a href="mailto:promiapp@gmail.com">promiapp@gmail.com</a></p>
 
-<p style="margin-top: 48px; color: #888; font-size: 13px;">Contact : promiapp@gmail.com — Tom Autier, 23 rue Breteuil, 13006 Marseille, France.</p>
+<h2>Article 2 — Objet</h2>
+<p>L'Application est un outil permettant à l'utilisateur (ci-après « l'Utilisateur ») de formuler, suivre et gérer des engagements personnels (ci-après « Promi »), seul ou au sein de groupes (ci-après « Nuées »).</p>
+<p><strong>L'Application est exclusivement un outil déclaratif de suivi personnel.</strong> L'Éditeur n'est en aucun cas partie prenante, garant, témoin, arbitre ou tiers de confiance des engagements pris entre Utilisateurs ou par un Utilisateur envers lui-même.</p>
+
+<h2>Article 3 — Absence de conseil</h2>
+<p>L'Application ne fournit aucun conseil juridique, médical, psychologique, financier, sentimental, éducatif, professionnel ni aucun autre conseil de quelque nature que ce soit. Le score Karma et les statistiques affichés n'ont aucune valeur contractuelle, probante, officielle ou opposable. Ils sont purement indicatifs et ludiques.</p>
+
+<h2>Article 4 — Absence de valeur juridique des engagements</h2>
+<p><strong>Les « Promi » créés dans l'Application n'ont aucune valeur juridique, contractuelle ou probante.</strong> Ils ne constituent ni une promesse au sens du droit civil, ni un contrat, ni un engagement opposable devant quelque juridiction que ce soit. L'Éditeur décline toute responsabilité quant aux conséquences (directes, indirectes, matérielles, morales, financières, relationnelles) découlant du respect ou du non-respect d'un engagement formulé dans l'Application.</p>
+
+<h2>Article 5 — Responsabilité de l'Utilisateur</h2>
+<p>L'Utilisateur est seul responsable :</p>
+<ul>
+<li>Du contenu qu'il crée dans l'Application (titres, commentaires, noms de Nuées).</li>
+<li>De l'utilisation qu'il fait de l'Application et de ses fonctionnalités.</li>
+<li>De ses engagements envers lui-même ou envers des tiers, que ces engagements soient formulés dans l'Application ou en dehors.</li>
+<li>De la sauvegarde de ses données (l'Application stocke les données localement ; l'Éditeur ne dispose d'aucune copie).</li>
+<li>Du respect de la législation applicable dans son pays de résidence.</li>
+</ul>
+
+<h2>Article 6 — Contenus interdits</h2>
+<p>L'Utilisateur s'engage à ne pas créer de contenu :</p>
+<ul>
+<li>Illicite, injurieux, diffamatoire, discriminatoire, haineux, menaçant, pornographique ou pédopornographique.</li>
+<li>Portant atteinte à l'ordre public, aux bonnes mœurs, aux droits d'autrui ou à la dignité humaine.</li>
+<li>Constituant une incitation à la violence, au suicide, à l'automutilation, à la consommation de substances illicites ou à toute activité illégale.</li>
+<li>Violant les droits de propriété intellectuelle de tiers.</li>
+</ul>
+<p>L'Éditeur n'a ni la capacité technique ni l'obligation de contrôler les contenus créés localement sur l'appareil de l'Utilisateur. L'Utilisateur reste seul responsable de ses contenus.</p>
+
+<h2>Article 7 — Limitation de responsabilité</h2>
+<div class="section">
+<p><strong>L'Éditeur décline toute responsabilité :</strong></p>
+<ul>
+<li>Pour tout dommage direct, indirect, accessoire, spécial, consécutif, punitif ou exemplaire résultant de l'utilisation ou de l'impossibilité d'utiliser l'Application.</li>
+<li>Pour toute perte de données, quelle qu'en soit la cause (suppression de l'Application, mise à jour système, panne matérielle, vol, acte malveillant).</li>
+<li>Pour les conséquences relationnelles, émotionnelles, sociales, professionnelles ou financières résultant du respect ou du non-respect d'engagements formulés dans l'Application.</li>
+<li>Pour l'exactitude, la fiabilité ou la pertinence des informations affichées (score Karma, streak, statistiques).</li>
+<li>Pour toute interruption, erreur, bug, virus ou dysfonctionnement de l'Application.</li>
+<li>Pour les actes ou comportements d'autres Utilisateurs dans le cadre des Nuées ou des interactions sociales futures.</li>
+<li>Pour tout préjudice résultant d'un cas de force majeure, d'un fait d'un tiers ou d'une faute de l'Utilisateur.</li>
+</ul>
+<p><strong>EN TOUTES CIRCONSTANCES, LA RESPONSABILITÉ TOTALE DE L'ÉDITEUR EST LIMITÉE AU MONTANT EFFECTIVEMENT PAYÉ PAR L'UTILISATEUR POUR L'APPLICATION AU COURS DES DOUZE (12) DERNIERS MOIS, SOIT ZÉRO EURO POUR LES FONCTIONNALITÉS GRATUITES.</strong></p>
+</div>
+
+<h2>Article 8 — Exclusion de garantie</h2>
+<p>L'Application est fournie « EN L'ÉTAT » et « TELLE QUE DISPONIBLE », sans garantie d'aucune sorte, expresse ou implicite, y compris mais sans s'y limiter les garanties de qualité marchande, d'adéquation à un usage particulier, de non-contrefaçon, de disponibilité, de continuité ou d'absence d'erreurs.</p>
+
+<h2>Article 9 — Notifications</h2>
+<p>L'Application peut programmer des notifications locales (rappels d'échéance, rappel matinal). Ces notifications sont gérées localement par le système d'exploitation et ne transitent par aucun serveur de l'Éditeur. L'Utilisateur peut les désactiver à tout moment dans les réglages de l'Application ou de son appareil. L'Éditeur décline toute responsabilité en cas de notification manquée, retardée ou non reçue.</p>
+
+<h2>Article 10 — Abonnements et achats intégrés</h2>
+<p>L'Application peut proposer des fonctionnalités payantes (abonnement « Promi Plus », achats intégrés). Les conditions de paiement, de renouvellement et de résiliation sont régies par les conditions d'Apple pour les achats intégrés (App Store). L'Éditeur n'a pas accès aux données de paiement de l'Utilisateur. Tout litige relatif au paiement doit être adressé à Apple.</p>
+
+<h2>Article 11 — Propriété intellectuelle</h2>
+<p>L'Application, son code source, son design, ses visuels, son logo, ses packs visuels, ses animations, ses sons et l'ensemble de ses composants sont la propriété exclusive de l'Éditeur et sont protégés par le droit de la propriété intellectuelle. Toute reproduction, modification, distribution, commercialisation ou exploitation non autorisée est interdite.</p>
+
+<h2>Article 12 — Données personnelles</h2>
+<p>Le traitement des données personnelles est décrit dans la <a href="https://tomot69.github.io/legal/privacy.html">Politique de confidentialité</a>, qui fait partie intégrante des présentes CGU.</p>
+
+<h2>Article 13 — Disponibilité</h2>
+<p>L'Éditeur ne garantit pas la disponibilité permanente, ininterrompue ou exempte d'erreurs de l'Application. L'Éditeur se réserve le droit de modifier, suspendre ou interrompre l'Application à tout moment, sans préavis ni indemnité.</p>
+
+<h2>Article 14 — Signalement et blocage</h2>
+<p>L'Application offre des fonctionnalités de signalement et de blocage d'utilisateurs. L'Éditeur n'est pas tenu de donner suite aux signalements et décline toute responsabilité quant aux contenus ou comportements signalés. Le blocage est une mesure locale qui ne garantit pas l'absence de contact par d'autres moyens.</p>
+
+<h2>Article 15 — Modification des CGU</h2>
+<p>L'Éditeur se réserve le droit de modifier les présentes CGU à tout moment. Toute modification sera notifiée via l'Application. L'Utilisateur sera invité à accepter les nouvelles CGU. En cas de refus, l'Utilisateur devra cesser d'utiliser l'Application.</p>
+
+<h2>Article 16 — Résiliation</h2>
+<p>L'Utilisateur peut cesser d'utiliser l'Application à tout moment en la supprimant de son appareil. Cette suppression entraîne la perte définitive et irréversible de toutes les données. L'Éditeur se réserve le droit de révoquer l'accès à l'Application en cas de violation des présentes CGU.</p>
+
+<h2>Article 17 — Indemnisation</h2>
+<p>L'Utilisateur s'engage à indemniser et à dégager de toute responsabilité l'Éditeur, ses représentants et ses ayants droit, contre toute réclamation, dommage, perte, coût ou dépense (y compris les frais d'avocat) résultant de l'utilisation de l'Application par l'Utilisateur ou de la violation des présentes CGU.</p>
+
+<h2>Article 18 — Droit applicable et juridiction</h2>
+<p>Les présentes CGU sont régies par le droit français. En cas de litige, les parties s'efforceront de trouver une solution amiable. À défaut, les tribunaux de Marseille seront seuls compétents.</p>
+
+<h2>Article 19 — Divisibilité</h2>
+<p>Si une disposition des présentes CGU est jugée invalide ou inapplicable, les autres dispositions restent en vigueur.</p>
+
+<h2>Article 20 — Contact</h2>
+<p>Pour toute question relative aux présentes CGU : <a href="mailto:promiapp@gmail.com">promiapp@gmail.com</a></p>
+
+<div class="footer">
+© 2026 Tom Autier — Promi. Tous droits réservés.<br>
+23 rue Breteuil, 13006 Marseille, France.
+</div>
+</div>
+
+<!-- ═══════════════ ENGLISH ═══════════════ -->
+
+<div lang="en">
+<h1>Terms of Use</h1>
+<p class="meta">Version 2 — Effective April 21, 2026 — Last updated: April 21, 2026</p>
+
+<div class="section">
+<p><strong>Any use of the Application implies full and unconditional acceptance of these Terms of Use.</strong> If you do not accept these terms, you must not use the Application.</p>
+</div>
+
+<h2>Article 1 — Publisher</h2>
+<p>The mobile application Promi (hereinafter "the Application") is published by Tom Autier, sole proprietor — 23 rue Breteuil, 13006 Marseille, France (hereinafter "the Publisher").<br>
+Email: <a href="mailto:promiapp@gmail.com">promiapp@gmail.com</a></p>
+
+<h2>Article 2 — Purpose</h2>
+<p>The Application is a tool that allows the user (hereinafter "the User") to formulate, track, and manage personal commitments (hereinafter "Promi"), individually or within groups (hereinafter "Nuées").</p>
+<p><strong>The Application is exclusively a declarative personal tracking tool.</strong> The Publisher is in no way a party, guarantor, witness, arbiter, or trusted third party to commitments made between Users or by a User to themselves.</p>
+
+<h2>Article 3 — No Advice</h2>
+<p>The Application does not provide any legal, medical, psychological, financial, emotional, educational, professional, or other advice of any kind. The Karma score and displayed statistics have no contractual, evidentiary, official, or enforceable value. They are purely indicative and recreational.</p>
+
+<h2>Article 4 — No Legal Value of Commitments</h2>
+<p><strong>The "Promis" created in the Application have no legal, contractual, or evidentiary value.</strong> They do not constitute a promise under civil law, a contract, or an enforceable commitment before any court. The Publisher disclaims all liability for consequences (direct, indirect, material, moral, financial, relational) arising from the fulfillment or non-fulfillment of a commitment made in the Application.</p>
+
+<h2>Article 5 — User Responsibility</h2>
+<p>The User is solely responsible for:</p>
+<ul>
+<li>The content they create in the Application (titles, comments, Nuée names).</li>
+<li>Their use of the Application and its features.</li>
+<li>Their commitments to themselves or to third parties, whether formulated in the Application or elsewhere.</li>
+<li>Backing up their data (the Application stores data locally; the Publisher holds no copy).</li>
+<li>Compliance with applicable laws in their country of residence.</li>
+</ul>
+
+<h2>Article 6 — Prohibited Content</h2>
+<p>The User agrees not to create content that is:</p>
+<ul>
+<li>Unlawful, insulting, defamatory, discriminatory, hateful, threatening, pornographic, or depicting child abuse.</li>
+<li>Detrimental to public order, morality, the rights of others, or human dignity.</li>
+<li>Inciting violence, suicide, self-harm, use of illegal substances, or any illegal activity.</li>
+<li>Infringing on the intellectual property rights of third parties.</li>
+</ul>
+<p>The Publisher has neither the technical capability nor the obligation to monitor content created locally on the User's device. The User remains solely responsible for their content.</p>
+
+<h2>Article 7 — Limitation of Liability</h2>
+<div class="section">
+<p><strong>The Publisher disclaims all liability:</strong></p>
+<ul>
+<li>For any direct, indirect, incidental, special, consequential, punitive, or exemplary damages arising from the use or inability to use the Application.</li>
+<li>For any data loss, regardless of cause (Application deletion, system update, hardware failure, theft, malicious act).</li>
+<li>For relational, emotional, social, professional, or financial consequences resulting from the fulfillment or non-fulfillment of commitments made in the Application.</li>
+<li>For the accuracy, reliability, or relevance of displayed information (Karma score, streak, statistics).</li>
+<li>For any interruption, error, bug, virus, or malfunction of the Application.</li>
+<li>For the acts or behavior of other Users within Nuées or future social interactions.</li>
+<li>For any harm resulting from force majeure, the act of a third party, or the User's own fault.</li>
+</ul>
+<p><strong>IN ALL CIRCUMSTANCES, THE PUBLISHER'S TOTAL LIABILITY IS LIMITED TO THE AMOUNT ACTUALLY PAID BY THE USER FOR THE APPLICATION DURING THE PRECEDING TWELVE (12) MONTHS, WHICH IS ZERO EUROS FOR FREE FEATURES.</strong></p>
+</div>
+
+<h2>Article 8 — Disclaimer of Warranty</h2>
+<p>The Application is provided "AS IS" and "AS AVAILABLE," without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, non-infringement, availability, continuity, or freedom from errors.</p>
+
+<h2>Article 9 — Notifications</h2>
+<p>The Application may schedule local notifications (deadline reminders, morning reminders). These notifications are managed locally by the operating system and do not pass through any Publisher server. The User may disable them at any time in the Application or device settings. The Publisher disclaims all liability for missed, delayed, or undelivered notifications.</p>
+
+<h2>Article 10 — Subscriptions and In-App Purchases</h2>
+<p>The Application may offer paid features (Promi Plus subscription, in-app purchases). Payment, renewal, and cancellation conditions are governed by Apple's in-app purchase terms (App Store). The Publisher does not have access to the User's payment information. Any payment disputes must be directed to Apple.</p>
+
+<h2>Article 11 — Intellectual Property</h2>
+<p>The Application, its source code, design, visuals, logo, visual packs, animations, sounds, and all its components are the exclusive property of the Publisher and are protected by intellectual property law. Any unauthorized reproduction, modification, distribution, commercialization, or exploitation is prohibited.</p>
+
+<h2>Article 12 — Personal Data</h2>
+<p>The processing of personal data is described in the <a href="https://tomot69.github.io/legal/privacy.html">Privacy Policy</a>, which forms an integral part of these Terms.</p>
+
+<h2>Article 13 — Availability</h2>
+<p>The Publisher does not guarantee the permanent, uninterrupted, or error-free availability of the Application. The Publisher reserves the right to modify, suspend, or discontinue the Application at any time, without notice or compensation.</p>
+
+<h2>Article 14 — Reporting and Blocking</h2>
+<p>The Application offers reporting and blocking features. The Publisher is not obligated to act on reports and disclaims all liability for reported content or behavior. Blocking is a local measure that does not guarantee the absence of contact through other means.</p>
+
+<h2>Article 15 — Modification of Terms</h2>
+<p>The Publisher reserves the right to modify these Terms at any time. Any changes will be notified via the Application. The User will be asked to accept the new Terms. In case of refusal, the User must stop using the Application.</p>
+
+<h2>Article 16 — Termination</h2>
+<p>The User may stop using the Application at any time by deleting it from their device. Deletion results in the permanent and irreversible loss of all data. The Publisher reserves the right to revoke access to the Application in case of violation of these Terms.</p>
+
+<h2>Article 17 — Indemnification</h2>
+<p>The User agrees to indemnify and hold harmless the Publisher, its representatives, and its successors against any claim, damage, loss, cost, or expense (including legal fees) resulting from the User's use of the Application or violation of these Terms.</p>
+
+<h2>Article 18 — Governing Law and Jurisdiction</h2>
+<p>These Terms are governed by French law. In case of dispute, the parties shall seek an amicable resolution. Failing that, the courts of Marseille, France, shall have exclusive jurisdiction.</p>
+
+<h2>Article 19 — Severability</h2>
+<p>If any provision of these Terms is found invalid or unenforceable, the remaining provisions shall remain in full force and effect.</p>
+
+<h2>Article 20 — Contact</h2>
+<p>For any questions regarding these Terms: <a href="mailto:promiapp@gmail.com">promiapp@gmail.com</a></p>
+
+<div class="footer">
+© 2026 Tom Autier — Promi. All rights reserved.<br>
+23 rue Breteuil, 13006 Marseille, France.
+</div>
+</div>
 
 </body>
 </html>
